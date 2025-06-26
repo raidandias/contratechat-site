@@ -3,7 +3,7 @@ import { MessageSquare, Send, Facebook, Instagram, Zap, Sparkles } from "lucide-
 import { useEffect, useRef, useState } from "react";
 
 const PlatformsSection = () => {
-  const sectionRef = useRef<HTMLSection>(null);
+  const sectionRef = useRef<HTMLElement>(null);
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
