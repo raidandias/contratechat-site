@@ -7,9 +7,9 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-brand-secondary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">CC</span>
+            <div className="flex items-center space-x-3">
+              <div className="w-12 h-12 rounded-full flex items-center justify-center overflow-hidden border-2 border-brand-secondary">
+                <img src="/logo-fundo-branco.png" alt="ContrateChat Logo" className="w-full h-full object-cover" />
               </div>
               <span className="text-xl font-bold">ContrateChat</span>
             </div>
@@ -22,9 +22,8 @@ const Footer = () => {
             <h4 className="text-lg font-semibold">Menu</h4>
             <ul className="space-y-2">
               <li><a href="#about" className="text-white/80 hover:text-white transition-colors">Quem Somos</a></li>
-              <li><a href="#features" className="text-white/80 hover:text-white transition-colors">Recursos</a></li>
               <li><a href="#pricing" className="text-white/80 hover:text-white transition-colors">Consulte</a></li>
-              <li><a href="#help" className="text-white/80 hover:text-white transition-colors">Ajuda</a></li>
+              <li><a href="/contato" className="text-white/80 hover:text-white transition-colors">Contato</a></li>
             </ul>
           </div>
 
@@ -56,10 +55,15 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
         <div className="border-t border-white/20 pt-8 text-center">
+          <p className="text-white/50 text-sm">
+            CNPJ: 51.897.833/0001-89
+          </p>
           <p className="text-white/60">
-            © 2024 ContrateChat. Todos os direitos reservados.
+            © 2025 ContrateChat. Todos os direitos reservados.
+          </p>
+          <p className="text-white/60 mb-2">
+            Desenvolvido por <a href="https://raidandias.com.br" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors">Raidan Dias</a>
           </p>
         </div>
       </div>

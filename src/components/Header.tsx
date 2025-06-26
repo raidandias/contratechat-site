@@ -7,12 +7,9 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    { label: "QUEM SOMOS", href: "#about" },
-    { label: "RECURSOS", href: "#features" },
-    { label: "CONTATO", href: "#contact" },
+    { label: "QUEM SOMOS", href: "/#about" },
     { label: "CONSULTE", href: "#pricing" },
-    { label: "ACESSO", href: "#access" },
-    { label: "AJUDA", href: "#help" },
+    { label: "CONTATO", href: "/contato" },
   ];
 
   return (
@@ -20,12 +17,11 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-3">
-            <img 
-              src="/lovable-uploads/3279b3f9-5b3b-440e-b835-e15258562302.png" 
-              alt="ContrateChat Logo" 
-              className="w-10 h-10"
+            <img
+              src="/logo-fundo-tranparente.png"
+              alt="ContrateChat Logo"
+              className="w-175 h-12"
             />
-            <span className="text-xl font-bold text-brand-primary">ContrateChat</span>
           </div>
 
           {/* Desktop Menu */}
@@ -42,10 +38,10 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" className="border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white">
+            <Button variant="outline" className="border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white" onClick={() => window.location.href = 'https://web.contratechat.com.br'}>
               Login
             </Button>
-            <Button className="bg-brand-secondary hover:bg-brand-secondary/90">
+            <Button className="bg-brand-secondary hover:bg-brand-secondary/90" onClick={() => window.location.href = 'https://web.contratechat.com.br?it=$bot'}>
               Começar Agora
             </Button>
           </div>
@@ -74,10 +70,10 @@ const Header = () => {
                 </a>
               ))}
               <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="outline" className="border-brand-primary text-brand-primary">
+                <Button variant="outline" className="border-brand-primary text-brand-primary" onClick={() => window.location.href = 'https://web.contratechat.com.br'}>
                   Login
                 </Button>
-                <Button className="bg-brand-secondary hover:bg-brand-secondary/90">
+                <Button className="bg-brand-secondary hover:bg-brand-secondary/90" onClick={() => window.location.href = 'https://web.contratechat.com.br?it=$bot'}>
                   Começar Agora
                 </Button>
               </div>

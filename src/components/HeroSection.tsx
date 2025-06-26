@@ -37,7 +37,7 @@ const HeroSection = () => {
                 <Sparkles className="w-4 h-4 text-yellow-400" />
                 <span className="text-white/90 text-sm font-medium">Nova Era da Automação</span>
               </div>
-              
+
               <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight">
                 Chega de{" "}
                 <span className="relative inline-block">
@@ -48,35 +48,24 @@ const HeroSection = () => {
                 </span>
                 {" "}com o que pode ser automatizado
               </h1>
-              
+
               <p className="text-xl lg:text-2xl text-white/80 leading-relaxed max-w-2xl">
-                ContrateChat – Automatização inteligente para atendimento e marketing. 
+                ContrateChat – Automatização inteligente para atendimento e marketing.
                 Crie chatbots sem programação e transforme seu atendimento em minutos.
               </p>
             </div>
 
             {/* Enhanced CTA buttons */}
             <div className="flex flex-col sm:flex-row gap-6">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="group relative bg-gradient-to-r from-brand-secondary to-cyan-500 hover:from-brand-secondary/90 hover:to-cyan-600 text-white px-8 py-6 text-lg font-semibold rounded-xl shadow-2xl hover:shadow-brand-secondary/50 transform hover:scale-105 transition-all duration-300 border-0"
               >
                 <span className="relative z-10 flex items-center gap-2">
-                  Começar Gratuitamente
+                  Ver Demonstração
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              </Button>
-              
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="group bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white hover:bg-white hover:text-brand-primary px-8 py-6 text-lg font-semibold rounded-xl transform hover:scale-105 transition-all duration-300"
-              >
-                <span className="flex items-center gap-2">
-                  Ver Demonstração
-                  <Bot className="w-5 h-5 group-hover:rotate-12 transition-transform" />
-                </span>
               </Button>
             </div>
 
@@ -105,8 +94,8 @@ const HeroSection = () => {
                 {/* Chat header */}
                 <div className="flex items-center space-x-4 mb-6 pb-4 border-b border-gray-200">
                   <div className="relative">
-                    <div className="w-12 h-12 bg-gradient-to-r from-brand-secondary to-cyan-500 rounded-full flex items-center justify-center shadow-lg">
-                      <Bot className="w-6 h-6 text-white" />
+                    <div className="w-12 h-12 rounded-full flex items-center justify-center shadow-lg overflow-hidden border-2 border-brand-secondary">
+                      <img src="/logo-fundo-branco.png" alt="ContrateChat Logo" className="w-full h-full object-cover" />
                     </div>
                     <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white animate-pulse"></div>
                   </div>
@@ -115,7 +104,7 @@ const HeroSection = () => {
                     <p className="text-sm text-green-600 font-medium">Online agora</p>
                   </div>
                 </div>
-                
+
                 {/* Chat messages with enhanced styling */}
                 <div className="space-y-4">
                   <div className="bg-gradient-to-r from-gray-100 to-gray-50 rounded-2xl p-4 shadow-sm">
@@ -127,7 +116,7 @@ const HeroSection = () => {
                   <div className="bg-gradient-to-r from-gray-100 to-gray-50 rounded-2xl p-4 shadow-sm">
                     <p className="text-gray-800 font-medium">Perfeito! Vou te mostrar como funciona... ✨</p>
                   </div>
-                  
+
                   {/* Typing indicator */}
                   <div className="bg-gray-100 rounded-2xl p-4 flex items-center gap-2">
                     <div className="flex gap-1">
@@ -140,7 +129,7 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Enhanced decorative elements */}
             <div className="absolute -top-8 -right-8 w-32 h-32 bg-gradient-to-r from-brand-secondary/30 to-cyan-400/30 rounded-full blur-2xl animate-pulse"></div>
             <div className="absolute -bottom-12 -left-12 w-40 h-40 bg-gradient-to-r from-brand-primary/20 to-purple-500/20 rounded-full blur-3xl animate-bounce"></div>
