@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -37,20 +38,17 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Brand colors */
+    --brand-primary: 210 65% 20%;
+    --brand-secondary: 185 50% 45%;
   }
 
   .dark {
@@ -100,4 +98,71 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Custom animations for enhanced hero section */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(66, 156, 174, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(66, 156, 174, 0.8);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Brand color utilities */
+.text-brand-primary {
+  color: hsl(var(--brand-primary));
+}
+
+.text-brand-secondary {
+  color: hsl(var(--brand-secondary));
+}
+
+.bg-brand-primary {
+  background-color: hsl(var(--brand-primary));
+}
+
+.bg-brand-secondary {
+  background-color: hsl(var(--brand-secondary));
+}
+
+.border-brand-primary {
+  border-color: hsl(var(--brand-primary));
+}
+
+.border-brand-secondary {
+  border-color: hsl(var(--brand-secondary));
 }
