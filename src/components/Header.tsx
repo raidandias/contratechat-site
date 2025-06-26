@@ -19,10 +19,12 @@ const Header = () => {
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-brand-primary to-brand-secondary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">CC</span>
-            </div>
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/3279b3f9-5b3b-440e-b835-e15258562302.png" 
+              alt="ContrateChat Logo" 
+              className="w-10 h-10"
+            />
             <span className="text-xl font-bold text-brand-primary">ContrateChat</span>
           </div>
 
