@@ -73,6 +73,16 @@ const PricingSection = () => {
               </div>
 
               <Button 
+                onClick={() => {
+                  // Criar mensagem personalizada com o plano selecionado
+                  const mensagem = `Olá! Estou interessado(a) no plano ${plan.name} e gostaria de consultar o preço e mais informações.`;
+                  
+                  // Formatar a URL para o WhatsApp com a mensagem
+                  const whatsappUrl = `https://wa.me/5571988493028?text=${encodeURIComponent(mensagem)}`;
+                  
+                  // Abrir em uma nova aba
+                  window.open(whatsappUrl, '_blank');
+                }}
                 className={`w-full mb-6 ${plan.popular ? 'bg-brand-secondary hover:bg-brand-secondary/90' : 'bg-brand-primary hover:bg-brand-primary/90'}`}
               >
                 Consultar Preço

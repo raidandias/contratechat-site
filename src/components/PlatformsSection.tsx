@@ -1,28 +1,31 @@
 
-import { MessageSquare, Send, Facebook, Instagram } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaTelegramPlane } from "react-icons/fa";
+import { FaFacebookMessenger } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 const PlatformsSection = () => {
   const platforms = [
     {
-      icon: <MessageSquare className="w-8 h-8" />,
+      icon: <FaWhatsapp className="w-8 h-8" />,
       title: "WhatsApp",
       description: "Otimize seu atendimento no WhatsApp com automação inteligente! Nosso sistema permite responder automaticamente às dúvidas mais comuns, registrar pedidos, enviar notificações e encaminhar o cliente para um atendente humano sempre que necessário.",
       color: "bg-green-500"
     },
     {
-      icon: <Send className="w-8 h-8" />,
+      icon: <FaTelegramPlane className="w-8 h-8" />,
       title: "Telegram",
       description: "Atendimento ágil e eficiente no Telegram para sua empresa. Se sua empresa utiliza o Telegram, nosso bot é a solução ideal para oferecer um suporte ágil e versátil. Ele automatiza respostas, se conecta com seus sistemas internos e gerencia um grande volume de mensagens com facilidade.",
       color: "bg-blue-500"
     },
     {
-      icon: <Facebook className="w-8 h-8" />,
+      icon: <FaFacebookMessenger className="w-8 h-8" />,
       title: "Facebook",
       description: "Automatize seu atendimento no Facebook Messenger com inteligência e personalização. Com nosso bot, sua empresa pode oferecer respostas instantâneas no Messenger, enviando mensagens personalizadas conforme o perfil de cada cliente.",
       color: "bg-blue-600"
     },
     {
-      icon: <Instagram className="w-8 h-8" />,
+      icon: <FaInstagram className="w-8 h-8" />,
       title: "Instagram",
       description: "Aumente o engajamento no Instagram com automação inteligente! Automatize respostas no Direct e nos comentários das suas publicações, oferecendo informações rápidas sobre seus produtos ou serviços.",
       color: "bg-pink-500"
@@ -30,7 +33,7 @@ const PlatformsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section id="resources" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-brand-primary mb-6">

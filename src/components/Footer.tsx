@@ -1,5 +1,5 @@
 
-import { Mail, Phone, MessageCircle } from "lucide-react";
+import { Mail, Phone, MessageCircle, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -21,9 +21,11 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Menu</h4>
             <ul className="space-y-2">
-              <li><a href="#about" className="text-white/80 hover:text-white transition-colors">Quem Somos</a></li>
-              <li><a href="#pricing" className="text-white/80 hover:text-white transition-colors">Consulte</a></li>
-              <li><a href="/contato" className="text-white/80 hover:text-white transition-colors">Contato</a></li>
+              <li><a href="/#about" className="text-white/80 hover:text-white transition-colors">Quem Somos</a></li>
+              <li><a href="/#resources" className="text-white/80 hover:text-white transition-colors">Recursos</a></li>
+              <li><a href="/#pricing" className="text-white/80 hover:text-white transition-colors">Consulte</a></li>
+              <li><a href="/#faq" className="text-white/80 hover:text-white transition-colors">Ajuda</a></li>
+              <li><a href="/#contact" className="text-white/80 hover:text-white transition-colors">Contato</a></li>
             </ul>
           </div>
 
@@ -52,12 +54,18 @@ const Footer = () => {
                   sac@contratechat.com.br
                 </a>
               </div>
+              <div className="flex items-start space-x-3">
+                <MapPin className="w-5 h-5 text-brand-secondary flex-shrink-0 mt-1" />
+                <span className="text-white/80">
+                  RUA DA GRÉCIA 165, ED SERRA DA RAIZ - SALA 504, COMÉRCIO
+                </span>
+              </div>
             </div>
           </div>
         </div>
         <div className="border-t border-white/20 pt-8 text-center">
           <p className="text-white/50 text-sm">
-            CNPJ: 51.897.833/0001-89
+            CNPJ: 18.143.887/0001-32
           </p>
           <p className="text-white/60">
             © 2025 ContrateChat. Todos os direitos reservados.

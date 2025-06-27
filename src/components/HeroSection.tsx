@@ -1,6 +1,10 @@
 
 import { Button } from "@/components/ui/button";
-import { MessageCircle, Bot, Zap, Clock, Sparkles, ArrowRight } from "lucide-react";
+import { Sparkles, ArrowRight } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaTelegramPlane } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebookMessenger } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
@@ -71,12 +75,13 @@ const HeroSection = () => {
 
             {/* Enhanced platform icons */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12">
-              {[
-                { icon: MessageCircle, label: "WhatsApp", color: "from-green-400 to-green-600" },
-                { icon: Bot, label: "Telegram", color: "from-blue-400 to-blue-600" },
-                { icon: Zap, label: "Instagram", color: "from-pink-400 to-purple-600" },
-                { icon: Clock, label: "Facebook", color: "from-blue-500 to-indigo-600" }
-              ].map((platform, index) => (
+              {
+                [
+                  { icon: FaWhatsapp, label: "WhatsApp", color: "from-green-500 to-green-600" },
+                  { icon: FaTelegramPlane, label: "Telegram", color: "from-blue-400 to-blue-600" },
+                  { icon: FaInstagram, label: "Instagram", color: "from-pink-500 to-purple-600" },
+                  { icon: FaFacebookMessenger, label: "Facebook", color: "from-blue-500 to-indigo-600" }
+                ].map((platform, index) => (
                 <div key={platform.label} className="group text-center">
                   <div className={`w-16 h-16 bg-gradient-to-r ${platform.color} rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg group-hover:shadow-xl transform group-hover:scale-110 group-hover:-rotate-6 transition-all duration-300`}>
                     <platform.icon className="w-8 h-8 text-white" />

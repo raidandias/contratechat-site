@@ -8,8 +8,10 @@ const Header = () => {
 
   const menuItems = [
     { label: "QUEM SOMOS", href: "/#about" },
-    { label: "CONSULTE", href: "#pricing" },
-    { label: "CONTATO", href: "/contato" },
+    { label: "RECURSOS", href: "/#resources" },
+    { label: "CONSULTE", href: "/#pricing" },
+    { label: "AJUDA", href: "/#faq" },
+    { label: "CONTATO", href: "/#contact" },
   ];
 
   return (
@@ -40,9 +42,6 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-4">
             <Button variant="outline" className="border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white" onClick={() => window.location.href = 'https://web.contratechat.com.br'}>
               Login
-            </Button>
-            <Button className="bg-brand-secondary hover:bg-brand-secondary/90" onClick={() => window.location.href = 'https://web.contratechat.com.br?it=$bot'}>
-              Começar Agora
             </Button>
           </div>
 
