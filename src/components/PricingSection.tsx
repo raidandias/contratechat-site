@@ -6,7 +6,7 @@ const PricingSection = () => {
   const plans = [
     {
       name: "Contrate Basic",
-      users: "2 Usuários", 
+      users: "2 Usuários",
       connections: "WhatsApp",
       price: "consulte",
       popular: false
@@ -14,7 +14,7 @@ const PricingSection = () => {
     {
       name: "Contrate Plus",
       users: "3 Usuários",
-      connections: "WhatsApp", 
+      connections: "WhatsApp",
       price: "consulte",
       popular: true
     },
@@ -22,7 +22,7 @@ const PricingSection = () => {
       name: "Contrate Premium",
       users: "5 Usuários",
       connections: "WhatsApp",
-      price: "consulte", 
+      price: "consulte",
       popular: false
     }
   ];
@@ -51,8 +51,8 @@ const PricingSection = () => {
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
           {plans.map((plan, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className={`bg-white rounded-xl p-8 shadow-lg ${plan.popular ? 'ring-2 ring-brand-secondary relative' : ''} hover:shadow-xl transition-shadow`}
             >
               {plan.popular && (
@@ -62,7 +62,7 @@ const PricingSection = () => {
                   </span>
                 </div>
               )}
-              
+
               <div className="text-center mb-6">
                 <h3 className="text-2xl font-bold text-brand-primary mb-2">{plan.name}</h3>
                 <p className="text-gray-600 mb-4">{plan.users}</p>
@@ -72,14 +72,14 @@ const PricingSection = () => {
                 </div>
               </div>
 
-              <Button 
+              <Button
                 onClick={() => {
                   // Criar mensagem personalizada com o plano selecionado
                   const mensagem = `Olá! Estou interessado(a) no plano ${plan.name} e gostaria de consultar o preço e mais informações.`;
-                  
+
                   // Formatar a URL para o WhatsApp com a mensagem
                   const whatsappUrl = `https://wa.me/5571988493028?text=${encodeURIComponent(mensagem)}`;
-                  
+
                   // Abrir em uma nova aba
                   window.open(whatsappUrl, '_blank');
                 }}
