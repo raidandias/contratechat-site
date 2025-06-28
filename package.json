@@ -9,10 +9,10 @@
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "pm2 start ecosystem.config.js --env production",
-    "start:dev": "pm2 start ecosystem.config.js --env development",
-    "stop": "pm2 stop ecosystem.config.js",
-    "restart": "pm2 restart ecosystem.config.js"
+    "start": "pm2 start ecosystem.config.cjs --env production",
+    "start:dev": "pm2 start ecosystem.config.cjs --env development",
+    "stop": "pm2 stop ecosystem.config.cjs",
+    "restart": "pm2 restart ecosystem.config.cjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
